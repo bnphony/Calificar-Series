@@ -6,6 +6,12 @@ html {
     
 }
 
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
 main {
     max-width: 80%;
     margin: 0 auto;
