@@ -37,8 +37,8 @@ Sistema para la valoración de series o películas, permite categorizarlas y cal
 - CREATE, LIST, UPDATE, DELETE categorias.
 - CREATE, LIST, UPDATE, DELETE series/películas.
 - CREATE, LIST, UPDATE, DELETE capítulos de series.
-- Descargar archivo (JSON) de los datos de una categoría.
-- Subir archivo (JSON) con datos de series/películas en una categoría.
+- Descargar archivo JSON de los datos de una categoría.
+- Subir  datos de series/películas en una categoría utilizando archivo JSON.
 - Mostar un grafico de barras con el ranking de series/películos.
 - Descargar el ranking de series/películas.
 
@@ -54,31 +54,62 @@ Sistema para la valoración de series o películas, permite categorizarlas y cal
   
 ## Dominio
 
-Un usuario se crea una cuenta para poder iniciar sesión y logeu
-Cualquier usuario puede utilizar la aplicación web, la única regla a considerar es: cada linea que se ingrese se considera como un item para el ranking final.
-- El usuario puede configurar el signo utilizado para los bordes, el tamaño del ranking final, la alineación del contenido o enumarar cada línea.
-- El botón para copiar el ranking final envuelve al mismo en signos especiales (\``` ranking final \```) esto con el fin de ayudar a mantener su apariencia en distintas cajas de comentarios o editores de texto.
+Gestionar categorias, series/películas, episodios, generar graficos interactivos, reportes.
+- Un usuario puede crearse una cuenta, iniciar sesión, restablecer su contraseña utilizando su email.
+- Un usuario puede crear, actualizar, listar o eliminar categorías.
+- Un usuario puede generar reportes de las valoraciones de series/peliculas por categoría.
+- Una categoría tiene 0 o mas series/películas.
+- Una serie tiene 0 o mas episodios.
+- Un episodio tiene una imagen, descripción, valoración.
 
-### Configuración
+### Categoría
 
-| Opción      | Valores                                      |
-|-------------|----------------------------------------------|
-| Bordes      | Tabla, Asteriscos, Numerales, Personalizado  |
-| Dimensiones | Desktop, Celular                             |
-| Enumerar    | Marcado, Desmarcado                          |
-| Alinear     | Izquierda, Centro, Derecha                   |
+| Campo      | Tipo    | Descripción             |
+|------------|---------|-------------------------|
+| id         | UUID    | Identificador único     |
+| nombre     | Varchar | Nombre de la Categoría  |
+| fk_usuario | Usuario | Usuario de la Categoría |
 
-### Lista Simple
+### Serie
 
-| Campo         | Valor  |
-|---------------|--------|
-| Área de Texto | String |
+| Campo        | Tipo      | Descripción           |
+|--------------|-----------|-----------------------|
+| id           | UUID      | Identificar único     |
+| nombre       | Varchar   | Nombre de la Serie    |
+| logo         | Varchar   | Logo de la Serie      |
+| fk_categoría | Categoría | Categoría de la Serie |
 
-### Lista Comentada
+### Episodio
 
-| Campo         | Valor  |
-|---------------|--------|
-| Área de Texto | String |
+| Campo       | Tipo    | Descripción              |
+|-------------|---------|--------------------------|
+| id          | UUID    | Identificar único        |
+| titulo      | Varchar | Título del Episodio      |
+| imagen      | Varchar | Imagen del Episodio      |
+| descripcion | Varchar | Descripción del Episodio |
+| fk_serie    | Serie   | Serie del Episodio       |
+| value       | Int     | Número del Episodo       |
+
+### Usuario
+
+| Campo            | Tipo     | Descripción                 |
+|------------------|----------|-----------------------------|
+| id               | UUID     | Identificador único         |
+| Usuario          | Varchar  | Nombre del Usuario          |
+| Password         | Varchar  | Contraseña del Usuario      |
+| Estado           | Varchar  | Estado Actual del Usuario   |
+| Token            | Varchar  | Token de Acceso del Usuario |
+| Token_Expires_At | DateTime | Fecha de Límite del Token   |
+
+### Usuario Token
+
+| Campo     | Tipo     | Descripción       |
+|-----------|----------|-------------------|
+| TokenId   | UUID     | Identificar único |
+| UsuarioId | Usuario  | Usuario del Token |
+| Token     | Varchar  | Token del Usuario |
+| Estado    | Varchar  | Estado del Token  |
+| Fecha     | DateTime | Fecha del Token   |
 
 ## Funciones
 <table>
