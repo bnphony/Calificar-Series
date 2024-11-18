@@ -4,7 +4,7 @@
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/bnphony/ListaComentada/deployed/img/general.PNG" width="80%" alt="Configuration Panel">
+  <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/category_list.PNG" width="80%" alt="Category List">
 
   ![GitHub](https://img.shields.io/github/last-commit/bnphony/Calificar-Series)
   [![PHP](https://img.shields.io/badge/Code-PHP-4f5b93)](https://www.php.net/manual/es/intro-whatis.php)
@@ -46,6 +46,7 @@ Sistema para la valoración de series o películas, permite categorizarlas y cal
 ### Tecnologías
 
 - Lenguaje del lado del servidor: [PHP](https://www.php.net/manual/es/intro-whatis.php) - Permite desarrollar aplicaciones web, se puede incrustar dentro de elementos HTML.
+- Servidor Web: [Apache](https://httpd.apache.org/) - Proveer servicios HTTP, seguros, efecientes y extensibles.
 - Interacción con la Interfaz: [Java](https://www.java.com/es/) y [JQuery](https://jquery.com/) - Agregar comportamiento a los componentes de la UI.
 - Cuadros de Confirmación: [jquery-confirm](https://craftpip.github.io/jquery-confirm/) - Cuadros de dialogos animados para confirmar procesos.
 - Iconos: [Font Awesome](https://fontawesome.com/) - Mejorar la experiencia de usuario.
@@ -113,13 +114,23 @@ Gestionar categorias, series/películas, episodios, generar graficos interactivo
 
 ## Funciones
 <table>
+  
   <tr>
-    <td witdh="100%">
-      <h3 align="center">Panel de Configuración</h3>
+    <td witdh="50%" colspan="1">
+      <h3 align="center">Creación de una Cuenta de Usuario</h3>
       <div align="center">
-        <img src="https://raw.githubusercontent.com/bnphony/ListaComentada/deployed/img/configuration.PNG" width="80%" alt="Configuration Panel">
+        <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/create_account.PNG" width="80%" alt="Create Account">
         <p>
-          - Opciones de Configuración: Tipo de Bordes, Dimensiones de pantalla recomendados, Enumerar las líneas, Alinear el contenido.
+          - El nombre del usuario debe ser unico. <br/>- La contraseña debe contener numeros y letras.
+        </p>
+      </div>
+    </td>
+    <td witdh="50%" colspan="1">
+      <h3 align="center">Iniciar Sesión</h3>
+      <div align="center">
+        <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/login.PNG" width="80%" alt="Login">
+        <p>
+          - Solo los usuarios registrados en la base de datos pueden acceder utilizando su nombre de usuario y contraseña.
         </p>
       </div>
     </td>
@@ -127,12 +138,14 @@ Gestionar categorias, series/películas, episodios, generar graficos interactivo
   </tr>
   
   <tr>
-    <td witdh="100%">
-      <h3 align="center">Lista Simple</h3>
+    <td witdh="100%" colspan="2">
+      <h3 align="center">Resetear Contraseña</h3>
       <div align="center">
-        <img src="https://raw.githubusercontent.com/bnphony/ListaComentada/deployed/img/list_input.PNG" width="80%" alt="List Input">
+        <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/recover_password.PNG" width="40%" alt="Reset Password 1">
+        <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/recover_password_2.PNG" width="40%" alt="Reset Password 2">
         <p>
-          - Se puede ingresar cualquier texto, pero cada línea se considera un elemento del ranking final.
+          - Ingresar el nombre de usuario único para verificar en la base datos y tener acceso para cambiar la contraseña.<br/>
+          - Las 2 contraseñas deben coincidir y debe utilizar numeros y letras.
         </p>
       </div>
     </td>
@@ -140,22 +153,79 @@ Gestionar categorias, series/películas, episodios, generar graficos interactivo
 
   
   <tr>
-    <td witdh="100%">
-      <h3 align="center">Lista Resultado</h3>
+    <td witdh="100%" colspan="2">
+      <h3 align="center">Lista de Categorías</h3>
       <div align="center">
-        <img src="https://raw.githubusercontent.com/bnphony/ListaComentada/deployed/img/list_output.PNG" width="80%" alt="List Output">
+        <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/category_list.PNG" width="80%" alt="Category List">
         <p>
-          - Ranking Final con todas las configuraciones aplicadas.
+          - Crear una nueva Categoría.<br/>
+          - La imagen de fondo de cada categoría se coloca automáticamente utilizando los logos de las seres/películas que estén registradas dentro de esa categoría.
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td witdh="100%" colspan="2">
+      <h3 align="center">Lista de Categorías</h3>
+      <div align="center">
+        <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/create_serie.PNG" width="80%" alt="Create Serie">
+        <p>
+          - Registrar una serie/película: nombre, logo, número de capítulos (esto crea los nodos para cada capítulo). <br/>
+          - Iconos Verdes de la derecha: Subir/Descargar los datos de las series y capítulos de la categoría actual.
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td witdh="100%" colspan="2">
+      <h3 align="center">Actualizar/Eliminar Serie</h3>
+      <div align="center">
+        <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/update_delete_serie.PNG" width="80%" alt="Update/Delete Serie">
+        <p>
+          - Actualizar o Eliminar la información de una serie asi como todos sus capitulos.          
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td witdh="100%" colspan="2">
+      <h3 align="center">Valoración de Capítulos Interactivo</h3>
+      <div align="center">
+        <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/serie_interactive.PNG" width="80%" alt="Serie Interactive">
+        <p>
+          - El usuario puede arrastrar los nodos para asignar la nota correspondiente a cada capitulo. <br/>
+          - El promedio general de la aserie se va actualizando automaticamente. <br/>
+          - Los nodos formas una grafíca, facilitando la valoración general. <br/>
+          - Doble Click en un nodo: abrir modal de configuración del capítulo. <br/>
+          - Click Derecho en un nodo: confirmar la eliminación del capítulo. <br/>
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td witdh="100%" colspan="2">
+      <h3 align="center">Información Breve del Capítulo</h3>
+      <div align="center">
+        <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/tooltip.PNG" width="80%" alt="Tooltip">
+        <p>
+          - Al pasar el mouse sobre encima de un nodo: presentación del título, la imagen y un poco de la descripción del capítulo.
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td witdh="100%" colspan="2">
+      <h3 align="center">Gráfico de Resultados</h3>
+      <div align="center">
+        <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/resultados.PNG" width="80%" alt="Results">
+        <p>
+          - Gráfico de barras horizontal, ordenado descendentemente, presentando las mejores series/películas de la categoría actual.<br/>
+          - Botón de 'Descargar': descargar el gráfico de barras en formato .svg pero con las imagenes incrustadas.
         </p>
       </div>
     </td>
   </tr>
 </table>
-
-### Sitio de la Aplicación Web
-
-[Link de la aplicación](https://bnphony.github.io/ListaComentada/)
-
 
 
 ## Autor
