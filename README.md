@@ -18,15 +18,17 @@
 </div>
 
 ## Indice
-- [Convertir lista simple en TOP](#convertir-lista-simple-en-top)
+
+- [Calificar Series](#calificar-series)
   - [Descripción](#descripción)
      - [Tecnologías](#tecnologías)
   - [Dominio](#dominio)
-     - [Configuración](#configuración)
-     - [Lista Simple](#lista-simple)
-     - [Lista Comentada](#lista-comentada)
+     - [Categoría](#categoría)
+     - [Serie](#serie)
+     - [Episodio](#episodio)
+     - [Usuario](#usuario)
+     - [Usuario Token](#usuario-token)
   - [Funciones](#funciones)
-     - [Sitio de la Aplicación Web](#sitio-de-la-aplicación-web)
   - [Autor](#autor)
      - [Contacto](#contacto)
   - [Licencia de Uso](#licencia-de-uso)
