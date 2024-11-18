@@ -23,6 +23,7 @@ const instrucciones = d3.select('.c_instrucciones');
 // Modal Actualizar Serie
 const configAnime = d3.select('#id-config-anime');
 const configLogo = d3.select('#id-config-logo');
+const configTitle = d3.select('#myModalAnime .modal-title');
 const configShowImage = d3.select('#config-show-image');
 
 
@@ -216,6 +217,7 @@ function generarGrafico(datos, index) {
         .text('\uf013')
         .on('click', (event, d) => {
             configAnime.attr('value', d.INFO.nombre);
+            configTitle.html('<b><i class="fas fa-search"></i> Editar Información de la serie/película</b>');
             configShowImage.attr('src', `media/animes/${d.INFO.logo}`);
             $('#myModalAnime').data('modalData', d);
             $('#myModalAnime').modal('show');

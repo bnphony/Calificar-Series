@@ -1,40 +1,39 @@
 /* GENERAL */
 html {
-    background-color: #F7F7F7;
-    font-family: 'Courier New', Courier, monospace;
-    /* margin: 0 auto; */
-    
+  background-color: #f7f7f7;
+  font-family: "Courier New", Courier, monospace;
+  /* margin: 0 auto; */
 }
 
 body {
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 main {
-    max-width: 80%;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* MAIN */
 
 /* FORM */
 form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-collapse: collapse;
-    box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
+  box-sizing: border-box;
 }
 
 .btnSubmitSerie {
-    background-color: steelblue !important;
-    color: #FFF !important;
+  background-color: steelblue !important;
+  color: #fff !important;
 }
 .btnSubmitSerie:hover {
-    color: #000 !important;
+  color: #000 !important;
 }
 
 /* 
@@ -42,279 +41,275 @@ form {
   #elementoID:checked ~ .divClass elemento
 */
 form input {
-    display: inline-block;   
-    padding: 10px;
-    line-height: 20px;
-    flex-grow: 2;
+  display: inline-block;
+  padding: 10px;
+  line-height: 20px;
+  flex-grow: 2;
 }
 
 form label {
-    margin-bottom: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 form button {
-    padding: 10px;
+  padding: 10px;
 }
 
 .contenedor-calificaciones {
-    width: 100%;
+  width: 100%;
 }
 /* CONTENEDOR GRAFICO */
 .contenedor-grafico {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    /* border: 1px solid black; */
-    /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  /* border: 1px solid black; */
+  /* padding: 10px; */
 }
 
 /* + CAPITULOS */
 .g-addCap {
-    cursor: pointer;
+  cursor: pointer;
 }
-.g-addCap:hover > rect{
-    fill: green;
+.g-addCap:hover > rect {
+  fill: green;
 }
 
 /* GRAFICO */
 svg {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 text.axis-label {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 text.title {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .conexion {
-    fill: none;
-    stroke: #cecece;
-    stroke-width: 5;
-    stroke-linejoin: round;
-    
+  fill: none;
+  stroke: #cecece;
+  stroke-width: 5;
+  stroke-linejoin: round;
 }
 
 .g_puntaje:hover {
-    cursor: move;
+  cursor: move;
 }
 
 /* TITULO GRAFICO */
 .title {
-    padding: 5px 10px;
-    text-align: center;
-    line-height: 25px;
-    font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 20px;
 }
 
 /* AYUDA */
 .ayuda {
-    font-size: 30px;
-    font-weight: bold;
-    fill: #CECECE;
-    /* stroke-width: 1px; */
-    /* stroke: #FFF; */
+  font-size: 30px;
+  font-weight: bold;
+  fill: #cecece;
+  /* stroke-width: 1px; */
+  /* stroke: #FFF; */
 }
 
 .c_instrucciones {
-    position: absolute;
-    padding: 10px;
-    background-color: rgba(70, 130, 180, 0.75);
-    color: black;
-    border: 1px solid white;
-    border-radius: 10px;
-    display: none;
-    pointer-events: none;
-    height: 200px;
-    width: 50vw;
-    overflow: hidden !important;
+  position: absolute;
+  padding: 10px;
+  background-color: rgba(70, 130, 180, 0.75);
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: none;
+  pointer-events: none;
+  height: 200px;
+  width: 50vw;
+  overflow: hidden !important;
 }
 /* .ayuda:hover ~ .c_instrucciones{
     display: block;
 } */
 
-
 /* AXIS */
 .x-axis text {
-    font-size: 15px;
+  font-size: 15px;
 }
 .y-axis text {
-    font-size: 15px;
+  font-size: 15px;
 }
 /* TOOLTIP */
 .tooltip1 {
-    position: absolute;
-    padding: 10px;
-    background-color: rgba(70, 130, 180, 0.75);
-    color: black;
-    border: 1px solid white;
-    border-radius: 10px;
-    display: none;
-    pointer-events: none;
-    height: 200px;
-    width: 200px;
-    text-align: center;
-    overflow: hidden !important;
-    padding: 5px;
-  }
+  position: absolute;
+  padding: 10px;
+  background-color: rgba(70, 130, 180, 1);
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: none;
+  pointer-events: none;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  overflow: hidden !important;
+  padding: 5px;
+}
 
 .tooltip1 > h3 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .tooltip1 > img {
-    aspect-ratio: 4/3;
-    object-fit: scale-down;
+  aspect-ratio: 4/3;
+  object-fit: scale-down;
 }
 
-.tooltip1 > p  {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
-           line-clamp: 2;
-    -webkit-box-orient: vertical;
+.tooltip1 > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 /* CONFIGURACION INFO ANIME */
 .config {
-    font-family: FontAwesome;
-    font-size: 30px;
-    fill: #fff;
-    opacity: 0.75;
-    cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 30px;
+  fill: #fff;
+  opacity: 0.75;
+  cursor: pointer;
 }
 
-.config:hover { 
-    opacity: 1;
+.config:hover {
+  opacity: 1;
 }
 #config-show-image {
-    width: 100%;
-    height: 200px;
-    aspect-ratio: 4/3;
-    object-fit: scale-down;
-    margin-top: 0;
+  width: 100%;
+  height: 200px;
+  aspect-ratio: 4/3;
+  object-fit: scale-down;
+  margin-top: 0;
 }
-
 
 /* MODAL INFORMACION DEL CAPITULO */
 #show-imagen {
-    width: 100%;
-    height: 200px;
-    aspect-ratio: 4/3;
-    object-fit: scale-down;
-    margin-top: -10px;
+  width: 100%;
+  height: 200px;
+  aspect-ratio: 4/3;
+  object-fit: scale-down;
+  margin-top: -10px;
 }
-
 
 /* RESULTADOS */
 .g-bar-result > .logo-result {
-    aspect-ratio: 4/3;
-    object-fit: scale-down;
-    
+  aspect-ratio: 4/3;
+  object-fit: scale-down;
 }
-
 
 /* FOOTER */
 footer {
-    background-color: steelblue;
+  background-color: steelblue;
 }
-
 
 /* SELECT */
 select option > img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
-
 
 /* DOWNLOAD DATA BUTTON */
 
 .gestion-data {
-    position: absolute;
-    top: 120px;
-    right: 30px;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 120px;
+  right: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .gestion-data > .btnDescargarData {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    border-radius: 50%;
-    background: #a8ff78;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-size: 30px;
-    transition: color 0.3s ease;
-    cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  background: #a8ff78; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #78ffd6,
+    #a8ff78
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #78ffd6,
+    #a8ff78
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 30px;
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
-
 .gestion-data > .btnDescargarData > i {
-    color: #333;
+  color: #333;
 }
 
 .gestion-data > .btnDescargarData > i:hover {
-    color: #FFF;
+  color: #fff;
 }
 
 #id-subir-data {
-    display: none;
+  display: none;
 }
 label[for="id-subir-data"] {
-    border-radius: 50%;
-    overflow: hidden;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .custom-file-upload {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    background: #a8ff78;  
-    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
-    background: linear-gradient(to right, #78ffd6, #a8ff78);
-    
+  width: 50px;
+  height: 50px;
+  display: flex;
+  background: #a8ff78;
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+  background: linear-gradient(to right, #78ffd6, #a8ff78);
 }
-.custom-file-upload > i{
-    color: #333;
-    font-size: 30px;
+.custom-file-upload > i {
+  color: #333;
+  font-size: 30px;
 }
 
 .custom-file-upload:hover > i {
-    color: #FFF;
+  color: #fff;
 }
-
-
 
 /* Categoria */
 
 .contenedor-categoria {
-    position: relative;
-    background-color: #ccc;
-    padding: 20px;
+  position: relative;
+  background-color: #ccc;
+  padding: 20px;
 }
 
 .contenedor-categoria > .btn-config-categoria {
-    position: absolute;
-    right: 20px;
-    top: 10px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
 }
 
 .contenedor-categoria > .btn-config-categoria:hover {
-    color: #FFF;
+  color: #fff;
 }
 
 .desactivar-div {
-    pointer-events: none;
-    opacity: 0.5;
+  pointer-events: none;
+  opacity: 0.5;
 }

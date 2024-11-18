@@ -19,7 +19,7 @@
         </div>
     </div>
 
-    <h1>Valoracion de Series</h1>
+    <h1>Valoración de Series</h1>
     <fieldset class="row">
         <legend>Registrar una Serie</legend>
         <form id="data" action="." method="POST" enctype="multipart/form-data">
