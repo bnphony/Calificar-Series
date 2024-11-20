@@ -118,7 +118,7 @@ Gestionar categorias, series/películas, episodios, generar graficos interactivo
 <table>
   
   <tr>
-    <td witdh="50%" colspan="1">
+    <td width="50%">
       <h3 align="center">Creación de una Cuenta de Usuario</h3>
       <div align="center">
         <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/create_account.PNG" width="80%" alt="Create Account">
@@ -127,7 +127,7 @@ Gestionar categorias, series/películas, episodios, generar graficos interactivo
         </p>
       </div>
     </td>
-    <td witdh="50%" colspan="1">
+    <td width="50%">
       <h3 align="center">Iniciar Sesión</h3>
       <div align="center">
         <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/login.PNG" width="80%" alt="Login">
@@ -136,7 +136,6 @@ Gestionar categorias, series/películas, episodios, generar graficos interactivo
         </p>
       </div>
     </td>
-    
   </tr>
   
   <tr>
@@ -155,7 +154,7 @@ Gestionar categorias, series/películas, episodios, generar graficos interactivo
 
   
   <tr>
-    <td witdh="100%" colspan="2">
+    <td width="100%" colspan="2">
       <h3 align="center">Lista de Categorías</h3>
       <div align="center">
         <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/category_list.PNG" width="80%" alt="Category List">
@@ -167,7 +166,7 @@ Gestionar categorias, series/películas, episodios, generar graficos interactivo
     </td>
   </tr>
   <tr>
-    <td witdh="100%" colspan="2">
+    <td width="100%" colspan="2">
       <h3 align="center">Lista de Categorías</h3>
       <div align="center">
         <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/create_serie.PNG" width="80%" alt="Create Serie">
@@ -179,7 +178,7 @@ Gestionar categorias, series/películas, episodios, generar graficos interactivo
     </td>
   </tr>
   <tr>
-    <td witdh="100%" colspan="2">
+    <td width="100%" colspan="2">
       <h3 align="center">Actualizar/Eliminar Serie</h3>
       <div align="center">
         <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/update_delete_serie.PNG" width="80%" alt="Update/Delete Serie">
@@ -205,7 +204,7 @@ Gestionar categorias, series/películas, episodios, generar graficos interactivo
     </td>
   </tr>
   <tr>
-    <td witdh="100%" colspan="2">
+    <td width="100%" colspan="2">
       <h3 align="center">Información Breve del Capítulo</h3>
       <div align="center">
         <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/tooltip.PNG" width="80%" alt="Tooltip">
@@ -216,7 +215,7 @@ Gestionar categorias, series/películas, episodios, generar graficos interactivo
     </td>
   </tr>
   <tr>
-    <td witdh="100%" colspan="2">
+    <td width="100%" colspan="2">
       <h3 align="center">Gráfico de Resultados</h3>
       <div align="center">
         <img src="https://raw.githubusercontent.com/bnphony/Calificar-Series/master/static/img/resultados.PNG" width="80%" alt="Results">
